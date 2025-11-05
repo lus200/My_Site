@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyCatalogu.co</title>
+  <style>
+    body {
+      background-image: url('black.jpg'); 
+      background-size: cover;   
+      background-position: center;
+    }
+
+    form {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: large;
+      background: rgb(141, 141, 141);  
+      padding: 50px;
+      margin: 100px auto; 
+      width: 300px;
+      height: 400px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <form onsubmit="return myForm()">
+    <h2>Login</h2>
+    <label>Username:</label><br>
+    <input type="text" name="username" id="user"><br>
+    <label for="">Password:</label><br>
+    <input type="password" name="password" id="pass"><br>
+    <input type="submit" value="Login"><br>
+    <input type="checkbox" id="cb">Remember me</input>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

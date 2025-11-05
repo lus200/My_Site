@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyCatalogue</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Luswepo CS Chella's Catalogue</h1>
+    <img src="profile.jpg" alt="Profile" class="header-profile">
+    <nav class="top-nav">
+    <a href="footballers.html">Footballers</a>
+    <a href="movies.html">Movies</a>
+    <a href="watches.html">Watches</a>
+  </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="welcome">
+      <h1>Welcome to MyCatalogue</h1>
+      <div id="datetime">Loading date & time...</div>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="slide"><img src="moon.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="star.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="blue.jpg" alt="Slide 3"></div>
+        <div class="slide"><img src="moon2.jpg" alt="Slide 4"></div>
+        <div class="slide"><img src="tree.jpg" alt="Slide 5"></div>
+
+        <button class="prev" aria-label="Previous slide">&#10094;</button>
+        <button class="next" aria-label="Next slide">&#10095;</button>
+      </div>
+
+      <div class="dots" aria-hidden="false">
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+        <span class="dot" data-slide="4"></span>
+        <span class="dot" data-slide="5"></span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="bio">
+      <p style="font-size: large;">
+        I am a student at the university of Lusaka, currently studying to get a bachelors degree in Info
+        systems. I am an aspiring IT professional with strong interests in web development, digital design, and technology-driven solutions. 
+        My focus is on building clean, functional, and user-friendly applications that bridge creativity and technical precision.
+        I enjoy exploring innovative approaches to problem-solving, continuously developing my skills in coding, design, and system management.
+        With a commitment to lifelong learning and growth, I am dedicated to mastering modern tools and technologies while applying them to
+        create impactful digital experiences.
+      </p>
+    </section>
+
+    <h3 style="margin-top:18px;">Below are my results for year one to year four</h3>
+
+
+    <section id="year-results" style="margin-top:10px;">
+      <label for="yearSelect">Select year:</label>
+  
+      <select id="yearSelect" onchange="showYear(this.value)">
+        <option value="">-- Choose year --</option>
+        <option value="1">Year 1</option>
+        <option value="2">Year 2</option>
+        <option value="3">Year 3</option>
+        <option value="4">Year 4</option>
+      </select>
+
+      
+      <div id="resultsContainer"></div>
+    </section>
+
+
+    <section class="content" style="margin-top:18px;">
+      <h3>How to use this website</h3>
+      <video controls width="100%" style="border-radius:8px; max-width:900px;">
+        <source src="nav.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <h2 style="color:aliceblue;">UNILUS</h2>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
