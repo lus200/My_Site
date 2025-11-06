@@ -13,7 +13,7 @@ function myForm() {
         return false;
     }
 
-    window.location.href = "index.html";
+    window.location.href = "H.html";
     return false;
 }
 
